@@ -1,0 +1,33 @@
+html {
+    background-image: url(./assets/skybackground.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed fixed;
+    background-size: cover;
+    height: 100%;
+    font-family: 'Helvetica';
+    overflow: hidden;
+    user-select: none;
+
+}
+
+#profile {
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    image-rendering: optimizeQuality; /* Diz ao navegador a forma que a imagem deverá ser renderizada e se suas dimensões serão mantidas */
+    object-fit: cover; /* Como o objeto se encaixa na caixa de fundo */
+}
+
+#card {
+    display: block;
+    text-align: center;
+    border: 1px solid rgba(255, 184, 126, 0.5);
+    border-radius: 8px; /* Curvatura da borda */
+    width: 30rem; /* a unidade de medida "rem" é uma unidade de medida relativa, referente ao tamanho da fonte na raíz do arquivo. Por padrão, se tem 16 px */
+    padding: 1rem;
+    margin: 5rem auto;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(2px); /* Desfoque no fundo da caixa */
+    box-shadow: 0 0 .25rem rgba(255, 130, 130, 0.5), -.125rem -.125rem 1rem rgba(255, 142, 29, 0.5), .125rem .125rem 1rem rgba(255, 25, 17, 0.5);
+    /* Sombreamento na boorda da caixa */
+}
