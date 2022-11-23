@@ -1,11 +1,16 @@
+@font-face {
+    font-family: 'opensans';
+    src: url(./assets/fonts/OpenSans-Bold.ttf) format('truetype');  
+}
 html {
     background-image: url(./assets/skybackground.jpg);
     background-repeat: no-repeat;
-    background-attachment: fixed fixed;
+    background-attachment: fixed;
     background-size: cover;
-    height: 100%;
+    height: 100vh;
     font-family: 'Helvetica';
     overflow: hidden;
+    overflow-y: scroll;
     user-select: none;
 
 }
@@ -29,5 +34,133 @@ html {
     background-color: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(2px); /* Desfoque no fundo da caixa */
     box-shadow: 0 0 .25rem rgba(255, 130, 130, 0.5), -.125rem -.125rem 1rem rgba(255, 142, 29, 0.5), .125rem .125rem 1rem rgba(255, 25, 17, 0.5);
-    /* Sombreamento na boorda da caixa */
+    /* Sombreamento na borda da caixa */
 }
+
+#name{
+    font-family: 'opensans', cursive;
+    font-size: 32px;
+    font-weight: bold;
+    text-transform: uppercase;
+    background: linear-gradient(-45deg, white 0%, rgba(254, 131, 25, 1) 35%, rgba(255, 38, 9, 1) 100%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 0.1px black;
+    
+    
+    /* O efeito de degradê é para o background. Portanto, esses seletores tornam o texto transparente e faz com que o efeito se aplique somente na área que o texto originalmente se ocupava. Como uma cliping mask. */
+}
+
+#caption{
+    color: white;
+    font-size: 24px;
+}
+
+#location {
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 24px;
+    color: rgb(228, 228, 228);
+    border: 0px;
+}
+
+#pin {
+    scale: 1.5;
+}
+
+.technologies{
+    display: inline-flex;
+    color: white;
+    border: 1px solid white;
+    border-radius: 8px;
+    padding: 0.25rem 1rem;
+    margin: 4px;
+    font-size: 18px;
+}
+
+.technologies:hover{
+    scale: 1.1;
+    background-color: rgba(254, 131, 25, 1);
+    transition: 0.3s ease-out;
+    color: black;
+    border: 0px;
+}
+
+#social-caption{
+    color: white;
+    font-size: 24px;
+}
+
+#social {
+    scale: 2.5;
+    margin: 2rem 0;
+}
+
+.socialmedia{
+    color: white;
+    padding: 0rem 0 .25rem;
+}
+.socialmedia:hover{
+    scale: 1.1;
+    transition: .3s ease-out;
+    cursor: pointer;
+    color: rgba(254, 131, 25, 1);
+}
+
+button{
+    background: linear-gradient(to bottom right, #ef4747, #e0864f);
+    border:0;
+    border-radius: 12px;
+    color: white;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Roboto, Helvetica, Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 2.5;
+    outline: transparent;
+    padding: 0 1rem;
+    margin: 14px;
+    text-align: center;
+    text-decoration: none;
+    transition: box-shadow 0.2s ease-in-out;
+    touch-action: manipulation;
+    white-space: nowrap;
+}
+
+@media only screen and (max-height: 1080px){
+    #card{
+        height: 80%;
+    }
+}
+
+@media only screen and (max-width: 950px){
+    #card{
+        width: 60%;
+    }
+}
+/*
+@media only screen and (max-width: 600px){
+    main{
+        flex-direction: column;
+    }
+    .left-login > h1{
+        display: none;
+    }
+    .left-login{
+        width: 100%;
+        height: auto;
+    }
+    .right-login{
+        width: 100%;
+        height: auto;
+    }
+    .left-login-image{
+        width: 50vw;
+        margin-bottom: 15px;
+    }
+    .card-login{
+        width: 90%;
+    }
+}
+*/
