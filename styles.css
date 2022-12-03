@@ -42,11 +42,13 @@ html {
     font-size: 32px;
     font-weight: bold;
     text-transform: uppercase;
+    color: rgb(255, 106, 20);
+    /*
     background: linear-gradient(-45deg, white 0%, rgba(254, 131, 25, 1) 35%, rgba(255, 38, 9, 1) 100%);
     background-clip: text;
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke: 0.1px black;
-    
+    */
     
     /* O efeito de degradê é para o background. Portanto, esses seletores tornam o texto transparente e faz com que o efeito se aplique somente na área que o texto originalmente se ocupava. Como uma cliping mask. */
 }
